@@ -1,0 +1,373 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+   body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1;
+    background: #d9fdd8;
+    color: #ffffff;
+    padding: 0rem;
+  }
+   header {
+    text-align: center;
+    padding: 3.2rem 8rem;
+    background: linear-gradient(120deg, #348338 , #a2dca4);
+    color: #ffffff;
+  }
+  .site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  
+  .site-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+   main {
+    max-width: 500px;
+    margin: rem auto;
+  }
+
+  .section-text, .section-image {
+    flex: 1 1 45%;
+    background-color: rgb(255, 0, 0);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+   section {
+    margin-bottom:10rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+   .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+   .placeholder {
+    background: rgb(255, 255, 255)000;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #5b5454;
+    border-radius: 0.5rem;
+  }
+   ul {
+    list-style: inside;
+    padding-left: 1rem;
+  }
+   footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 3rem;
+  }
+   
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+     section {
+      padding: 1rem;
+    }
+     .placeholder {
+      height: 120px;
+    }
+} 
+ 
+
+
+  
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+  }
+  
+  
+  .explicacao h3 {
+    color: #1e8b53;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .explicacao p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 15px) {
+    .linha {
+      flex-direction: column;
+    }
+  
+    .video iframe {
+      height: 100px;
+    }
+  }
+  
+  .bloco-texto {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3rem auto;
+    padding: 1.5rem;
+  }
+  
+  .texto {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9ff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .texto:hover {
+    transform: scale(1.02);
+  }
+  
+  .texto h2 {
+    font-size: 1.6rem;
+    color: #2a7c9f;
+    margin-bottom: 1rem;
+  }
+  
+  .texto p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .bloco-texto {
+      flex-direction: column;
+    }
+  }
+
+
+  
+  .bloco-video {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    background-color: #f2f8f2;
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .descricao {
+    max-width: 500px;
+  }
+  
+  .descricao h3 {
+    color: #988f8f;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .descricao p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsivo, porque Fer pensa em tudo */
+  @media (max-width: 768px) {
+    .bloco-video {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+  .bloco-com-imagem {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 4rem auto;
+    padding: 1rem;
+    max-width: 1000;
+    flex-wrap: wrap;
+  }
+  
+  .bloco-com-imagem.invertido {
+    flex-direction: row-reverse;
+  }
+  
+  .imagem img {
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .texto {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .texto h2 {
+    font-size: 1.6rem;
+    color: #23947a;
+    margin-bottom: 1rem;
+  }
+  
+  .texto p {
+    font-size: 1rem;
+    color: #4b4848;
+    line-height: 1.6;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 738px) {
+    .bloco-com-imagem,
+    .bloco-com-imagem.invertido {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imagem img {
+      max-width: 100%;
+    }
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #d9fdd8;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+  }
+  
+ 
+  
+  
+
+
+  /* CARROSSEL */
+  .carrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .carrossel img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+  }
+  
+  .botoes-carrossel {
+    margin-top: 10px;
+  }
+  
+  .botoes-carrossel button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+  }
+  
+  .botoes-carrossel button:hover {
+    background-color: #ccc;
+  }
+  
+
+  /* Rodapé */
+  .rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+  }
+  .lista__link a {
+    text-decoration: none;
+    color: var(--verde-principal);
+    margin-left: 1em;
+  }
+  
+  .rodape__texto {
+    margin: 1em 0em 0em;
+    color: var(--verde-principal);
+    font-size: 14px;
+  }
+  .rodape {
+    background-color: var(--verde-secundario);
+    text-align: center;
+    margin: 5em 0em 0em;
+  }
+  .rodape__logo {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+  }
+  .rodape__agrinho {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 5%;
+  }
